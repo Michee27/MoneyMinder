@@ -19,3 +19,9 @@ A API MoneyMinder é uma poderosa ferramenta de controle de gastos projetada par
 - Remover transação
 - Obter extrato de transações
 - Filtrar transações por categoria
+
+## Status do projeto
+Este projeto está atualmente em desenvolvimento ativo. Estamos constantemente trabalhando nele para torná-lo ainda melhor. Foi desenvolvido todo o escopo BackEnd, no momento esta sendo desenvolvido a parte FrontEnd para comunicar com a Back.
+
+## Código fonte
+![image](https://github.com/Michee27/MoneyMinder/assets/140012117/b6da8c1b-4055-4a4f-966d-5433063c358a)
