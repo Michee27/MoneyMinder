@@ -80,3 +80,15 @@ Para usar este projeto, siga estas etapas:
 npm run dev
 ```
 - [ ] Utilize a insomnia para testar as funções
+
+## Cadastrar usuário 
+Cadastrar uma conta acessando pelo seu endpoint: `/usuario`. Acessando a insomnia com `http://localhost:3000/usuario` deverá informar os campos nome, email, e senha para cadastrar o usuário. 
+
+![image](https://github.com/Michee27/MoneyMinder/assets/140012117/2c0eadf5-2944-4289-bf22-47e9bfb631ff)
+
+## Login do usuário
+Esse end point deve ser acessado através da URL: `http://localhost:3000/login` que permitirá o usuario cadastrado realizar o login no sistema, informado seu email e senha válida. Se os dados informados forem validados, será retornado para o usuário o seu token de acesso para as próximas etapas na API
+
+![image](https://github.com/Michee27/MoneyMinder/assets/140012117/afcc80d9-1eb2-423c-a262-f5bfce2a4820)
+
+
