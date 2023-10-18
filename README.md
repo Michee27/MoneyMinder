@@ -68,7 +68,6 @@ Uma ferramenta de desenvolvimento que monitora alterações em arquivos no diret
 Após clonar este repositório, você pode instalar todas as dependências e devDependencies usando o comando: npm install
 
 ## Instalação
-
 Para usar este projeto, siga estas etapas:
 
 1. Clone o repositório para sua máquina local usando o seguinte comando:
@@ -81,7 +80,7 @@ npm run dev
 ```
 - [ ] Utilize a insomnia para testar as funções
 
-## Cadastrar usuário 
+## Cadastrar usuário melhor
 Cadastrar uma conta acessando pelo seu endpoint: `/usuario`. Acessando a insomnia com `http://localhost:3000/usuario` deverá informar os campos nome, email, e senha para cadastrar o usuário. 
 
 ![image](https://github.com/Michee27/MoneyMinder/assets/140012117/2c0eadf5-2944-4289-bf22-47e9bfb631ff)
