@@ -80,7 +80,7 @@ npm run dev
 ```
 - [ ] Utilize a insomnia para testar as funções
 
-## Cadastrar usuário melhor
+## Cadastrar usuário
 Cadastrar uma conta acessando pelo seu endpoint: `/usuario`. Acessando a insomnia com `http://localhost:3000/usuario` deverá informar os campos nome, email, e senha para cadastrar o usuário. 
 
 ![image](https://github.com/Michee27/MoneyMinder/assets/140012117/2c0eadf5-2944-4289-bf22-47e9bfb631ff)
