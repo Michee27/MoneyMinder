@@ -1,1 +1,0 @@
-module.exports = "chaveXXLDoTeam46DoDesafioCubosAcademyModulo3Dindin"
