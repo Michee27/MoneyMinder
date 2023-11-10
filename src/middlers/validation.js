@@ -1,44 +1,44 @@
 
-const validarUsuario = (requisicao, resposta, next) => {
+const validateUser = (req, res, next) => {
 
-    const { email, senha } = requisicao.body
+    const { email, senha } = req.body
 
     if (!email) {
-        return resposta
+        return res
             .status(401)
             .json({ mensagem: 'Informe o E-mail por favor' })
     }
 
     if (!senha) {
-        return resposta
+        return res
             .status(401)
             .json({ mensagem: 'Informe a senha por favor' })
     }
     next()
 }
 
-const validarNome = (requisicao, resposta, next) => {
-    const { nome } = requisicao.body
+const validateName = (req, res, next) => {
+    const { nome } = req.body
 
     if (!nome) {
-        return resposta.status(401).json({
+        return res.status(401).json({
             mensagem: 'Informe o nome por favor'
         })
     }
     next()
 }
 
-const validarTransacao = (requisicao, resposta, next) => {
-    const { descricao, valor, data, categoria_id, tipo } = requisicao.body;
+const validateTransaction = (req, res, next) => {
+    const { descricao, valor, data, categoria_id, tipo } = req.body;
 
     if (!descricao || !valor || !data || !categoria_id || !tipo) {
-        return resposta
+        return res
             .status(400)
             .json({ mensagem: "Todos os campos obrigatórios devem ser informados." });
     }
 
     if (tipo !== "saida" && tipo !== "entrada") {
-        return resposta
+        return res
             .status(400)
             .json({ mensagem: "Tipo de transação inválido " });
     }
@@ -47,7 +47,7 @@ const validarTransacao = (requisicao, resposta, next) => {
 
 
 module.exports = {
-    validarUsuario,
-    validarNome,
-    validarTransacao,
+    validateUser,
+    validateName,
+    validateTransaction,
 }

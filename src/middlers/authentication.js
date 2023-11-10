@@ -1,13 +1,13 @@
 const jwt = require("jsonwebtoken")
-const pool = require("../config/conexao")
-const chaveSecreta = require("../config/chaveSecreta")
+const pool = require("../config/connection")
+const chaveSecreta = require("../config/secretKey")
 
 
-const autenticarUsuario = async (requisicao, resposta, next) => {
-    const { authorization } = requisicao.headers
+const autenticarUsuario = async (req, res, next) => {
+    const { authorization } = req.headers
 
     if (!authorization) {
-        return resposta.status(401).json({
+        return res.status(401).json({
             mensagem: 'Não autorizado'
         })
     }
@@ -23,15 +23,15 @@ const autenticarUsuario = async (requisicao, resposta, next) => {
         )
 
         if (rowCount < 1) {
-            return resposta.status(401).json({
+            return res.status(401).json({
                 mensagem: 'Não autorizado'
             })
         }
 
-        requisicao.usuarioEncontrado = rows[0]
+        req.userFound = rows[0]
         next()
     } catch (error) {
-        return resposta.status(401).json({ mensagem: 'Não autorizado' })
+        return res.status(401).json({ mensagem: 'Não autorizado' })
     }
 }
 
